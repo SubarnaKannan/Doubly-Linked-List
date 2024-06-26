@@ -107,13 +107,21 @@ class DLL {
 public class Main {
     public static void main (String args[]) {
         Scanner sc = new Scanner (System.in);
+        System.out.println("Enter the number of nodes to be added..");
         int size = sc.nextInt();
         DLL list = new DLL(size);
-        for (int i=0;i<size;i++)
+        for (int i=0;i<size;i++) {
+            System.out.println("Enter the element " +i);
             list.add(sc.nextInt());
-//        list.delete(12);
-//        list.insert(3, 23);
-        list.delete(2);
+        }
+        System.out.println("Enter the value to deleted");
+        int val = sc.nextInt();
+        list.delete(val);
+        System.out.println("Enter a position to insert a node..");
+        int position = sc.nextInt();
+        System.out.println("Enter the value to be inserted..");
+        int value = sc.nextInt();
+        list.insert(position, value);
         list.display();
     }
 }
