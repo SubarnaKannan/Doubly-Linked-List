@@ -1,4 +1,6 @@
 import java.util.*;
+
+//class for doubly linked list implementation
 class DLL {
     int size;
     DLL(int size) {
