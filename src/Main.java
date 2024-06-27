@@ -4,7 +4,7 @@ import java.util.*;
 class DLL {
     int size;
     DLL(int size) {
-        this.size = size;
+        this.size = size
     }
 
 //    class for creating nodes in doubly linked list
